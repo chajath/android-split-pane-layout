@@ -78,7 +78,7 @@ public class SplitPaneLayout extends ViewGroup {
 	private void extractAttributes(Context context, AttributeSet attrs) {
 		if (attrs != null) {
 			TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SplitPaneLayout);
-			mOrientation = a.getInt(R.styleable.SplitPaneLayout_orientation, 0);
+			mOrientation = a.getInt(R.styleable.SplitPaneLayout_splitOrientation, 0);
 			mSplitterSize = a.getDimensionPixelSize(R.styleable.SplitPaneLayout_splitterSize, context.getResources().getDimensionPixelSize(R.dimen.splitpanelayout_default_splitter_size));
 			mSplitterMovable = a.getBoolean(R.styleable.SplitPaneLayout_splitterMovable, true);			
 			TypedValue value = a.peekValue(R.styleable.SplitPaneLayout_splitterPosition);
